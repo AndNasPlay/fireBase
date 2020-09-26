@@ -27,7 +27,7 @@ class GroupsItems: Object, Codable {
         case id
         case name
         case type
-        case groupImg = "photo_100"
+        case groupImg = "photo_200"
     }
     convenience required init(from decoder: Decoder) throws {
         self.init()
