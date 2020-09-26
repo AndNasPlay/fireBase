@@ -1022,6 +1022,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="mvM-up-LKS"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IEd-y1-UBt">
                                 <rect key="frame" x="20" y="503" width="374" height="310"/>

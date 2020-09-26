@@ -65,42 +65,6 @@ class NetworkService {
             }
         }.resume()
     }
-//    func loadUsers(userId: Int, token: String, completion: @escaping (Result<[FriendsItems], NetworkError>) -> Void) {
-//        let params: Parameters = [
-//            "access_token": userId,
-//            "user_id": token,
-//            "order": "random",
-//            "v": version,
-//            "fields": "nickname",
-//            "count": 40
-//        ]
-//        AF.request(baseUrl + Methods.friends.rawValue, method: .get, parameters: params).responseData {  response in
-//            guard let data = response.data, let vkFriends = try? JSONDecoder().decode(FriendsInfo.self, from: data).response.items else {
-//                completion(.failure(.incorrectData))
-//                return
-//            }
-//            completion(.success(vkFriends))
-//        }.resume()
-//    }
-//    func loadVkFriends(userId: Int, token: String, completion: @escaping (Result<[FriendsItems], NetworkError>) -> Void) {
-//        let params: Parameters = [
-//            "access_token": userId,
-//            "user_id": token,
-//            "order": "random",
-//            "v": version,
-//            "fields": "nickname",
-//            "count": 40
-//        ]
-//        AF.request(baseUrl + Methods.friends.rawValue, method: .get, parameters: params).responseData { response in
-//            guard let data = response.data,
-//            let vkFriends = try? JSONDecoder().decode(FriendsInfo.self, from: data).response.items else {
-//                completion(.failure(.incorrectData))
-//                return
-//            }
-//            completion(.success(vkFriends))
-//        }.resume()
-//
-//    }
     
     func loadFriends(userId: Int, token: String, completion: ((Result<[FriendsItems], Error>) -> Void)? = nil) {
         let params: Parameters = [
